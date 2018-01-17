@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+
+body {
+	font-family: Garamond;
+	font-size: 35px;
+	height: 100%;
+	width: 100%;
+    background-repeat: no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(#D8ECF9), to(#e2c4aa)) fixed;
+    background-attachment: fixed;
+}
+
+h1 {
+	padding-top: 30px;
+	padding-left: 30px;
+	color: #131a20;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+h2 {
+	padding-top: 5px;
+	padding-left: 30px;
+	font-weight: bold;
+	color: #131a20;
+}
+
+p {
+	padding: 0px;
+	color: #131a20;
+	font-size: 18px;
+}
+
+p.title {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+}
+
+.item {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.item:hover {
+    opacity: 0.6;
+}
+
+.item:active {
+	opacity: 0.8;
+}
+
+.imgGradient {
+	opacity: 1;
+	position:fixed;
+	z-index: -1;
+	bottom:0; 
+	left:0;
+	width: 100%;
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)))
+}
+
+.imgProject {
+	max-width: 150px;
+	width: 50%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+.item img {
+	margin-bottom: 5px;
+}
