@@ -10,61 +10,102 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&amp;subset=latin-ext" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<h1>My Portfolio</h1>
-	<h2>By: Per Jaakonantti</h2>
+
 	<div class="container">
-		<h2>Group Projects</h2>
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://play.google.com/store/apps/details?id=se.ths.kth.Aramda&hl=sv')">
-					<img src="armada.png" class="imgProject"></img><p class="title">THS Armada App</p><p>I created the layout (no coding) and tested matching algorithm on students.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://mobilu.github.io/Project/')">
-					<img src="mobilu.png" class="imgProject"></img><p class="title">Mobilu</p><p>A classmate and I coded this in a course, made for mobile.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://lebonnobel.github.io/nobel/')">
-					<img src="lebonnobel.png" class="imgProject"></img><p class="title">Le Bon Nobel</p><p>Final project in a Information Visualization Course. I made the Chord Chart.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A939515&dswid=393')">
-					<img src="bachelors.png" class="imgProject"></img><p class="title">My Bachelor's thesis</p><p>A classmate and I created a prototype for mobile video schrolling and evaluated it.</p>
-				</div>
-			</div>
+		<br>
+		<div class="header">
+			<h1>My Portfolio - Per Jaakonantti</h1>
 		</div>
-		<h2>Own Projects</h2>
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://paeron.github.io/elections/')">
-					<img src="elections.png" class="imgProject"></img><p class="title">Elections</p><p>US presidenatial elections divided into age categories over time.</p>
+		<br>
+	</div>
+	
+
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-xl-6">
+				<div class="row height2 no-gutters">
+					<div class="col-xl-8">
+						<div class="item parent topleft noimage" onclick="linkOpener('https://paeron.github.io/elections/')">
+							
+							<!--
+							<img src="elections.png" class="imgProject" id="elections">
+							-->
+
+							<p class="title">US Presidential Elections</p>
+							<p>A simple visualisation in d3.js, it shows party preferences by age group.</p>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item parent noimage extra" onclick="linkOpener('https://paeron.github.io/RNN/')">
+							<!--
+							<img src="rnn.png" class="imgProject">
+							-->
+						<p class="title">RNN</p><p>A RNN created from Trump's tweets. </p>
+						</div>
+					</div>
+				</div>
+				<div class="row height3 no-gutters">
+					<div class="col-xl-6">
+						<div class="item parent bottomleft noimage extra" onclick="linkOpener('https://lebonnobel.github.io/nobel/')">
+							<!--
+							<img src="lebonnobel.png" class="imgProject">
+							-->
+							<p class="title">Le Bon Nobel</p><br><p>Final project in a Information Visualization Course. I made the Chord Chart.</p>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="item parent noimage extra" id="bachelors" onclick="linkOpener('http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A939515&dswid=393')">
+							<!--
+								<img src="bachelors.png" class="imgProject">
+							-->
+							<p class="title">My Bachelor's thesis</p><br><p>A classmate and I created a prototype for mobile video schrolling and evaluated it.</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://paeron.github.io/EuropeTravels/')">
-					<img src="europe.png" class="imgProject"></img><p class="title">Europe Travels</p><p>Photos from travels in Europe.</p>
+			<div class="col-xl-6">
+				<div class="row height3 no-gutters">
+					<div class="col-xl-4">
+						<div class="item parent noimage extra" onclick="linkOpener('https://mobilu.github.io/Project/')">
+							<!--
+							<img src="mobilu.png" class="imgProject">
+							-->
+							<p class="title">Mobilu</p><br><br><p>A classmate and I coded this in a course, made for mobile.</p>
+						</div>
+					</div>
+					<div class="col-xl-8">
+						<div class="item parent topright noimage" id="master" onclick="linkOpener('http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-233626')">
+							<!--<img src="exjobb.png" class="imgProject">-->
+							<p class="title">My Master's thesis</p><br><p>I created a web-based visualisation of warehouse movement.</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://paeron.github.io/RNN/')">
-					<img src="rnn.png" class="imgProject"></img><p class="title">RNN</p><p>A RNN created from Trump's tweet. </p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<div class="item" onclick="linkOpener('https://paeron.github.io/SingaporeTravels/')">
-					<img src="singapore.png" class="imgProject"></img><p class="title">Singapore Travels</p><p>Photos from travels in Asia.</p>
+				<div class="row height2 no-gutters">
+					<div class="col-xl-6">
+						<div class="item parent noimage" onclick="linkOpener('https://paeron.github.io/SingaporeTravels/')">
+							<!--
+							<img src="singapore.png" class="imgProject">
+							--><p class="title">Singapore Travels</p><p>A d3.js website showing travel photos from Asia</p>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="item parent bottomright noimage" onclick="linkOpener('https://paeron.github.io/EuropeTravels/')">
+							<!--<img src="europe.png" class="imgProject">-->
+							<p class="title">Europe Travels</p><p>A d3.js website showing travel photos from Europe.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<img src="myanmar.jpg" class="imgGradient"></img>
 	<script>
 
 	function linkOpener(url) {
